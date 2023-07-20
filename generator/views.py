@@ -5,4 +5,15 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Hello home')
+    return render(request, 'generator/home.html')
+
+
+def password(request):
+    this_pass = 'jaskd344_Sd'
+    return render(request, 'generator/password.html', {'password': this_pass
+
+
+
+
+
+                                                    })
